@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: "Roboto", sans-serif; */
+	
+}
+
+#contact {
+	background: #eee;
+	
+}
+
+.contact {
+	position: relative;
+	
+	/* min-height: 100vh; */
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact .content {
+	max-width: 100%;
+	
+	text-align: center;
+	color: #000;
+}
+
+.contact .content h2 {
+	font-family: "Poppins", sans-serif !important;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000;
+	padding-bottom: 20px;
+	margin-top: 70px;
+}
+
+.contact .content p {
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 300;
+	color: #000;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.cont5 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.cont5 .contactInfo {
+	
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.cont5 .contactInfo .box {
+	position: relative;
+	/* padding: 20px 0; */
+	height: 73px;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+
+.cont5 .contactInfo .box .icon {
+	min-width: 60px;
+	height: 60px;
+	background: #eee;
+	color: #7c7c7c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 25px;
+}
+
+.cont5 .contactInfo .box .text {
+	font-family: "Poppins", sans-serif !important;
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #000;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.cont5 .contactInfo .box .text h3 {
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 600;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.contact p {
+	font-family: "Poppins", sans-serif !important;
+	text-align: center;
+	display: block;
+}
+
+.contactForm {
+	width: 60%;
+	padding: 40px;
+	background: #eee;
+	border-radius: 10px;
+}
+
+.contactForm h2 {
+	font-family: "Poppins", sans-serif !important;
+	font-size: 20px;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.contactInfo h2 {
+	font-family: "Poppins", sans-serif !important;
+	font-size: 20px;
+	color: #000;
+	margin-left: 25px;
+	margin-bottom: 30px;
+}
+
+.contactForm .inputBox {
+	font-family: "Poppins", sans-serif !important;
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+	font-family: "Poppins", sans-serif !important;
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 1px solid #333;
+	outline: none;
+	background: #eee;
+}
+
+.contactForm .inputBox span {
+	font-family: "Poppins", sans-serif !important;
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #555;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+	
+	color: #7c7c7c;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+	font-family: "Poppins", sans-serif !important;
+	width: 160px;
+	background: #7c7c7c;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+	border: 2px solid #7c7c7c;
+	border-radius: 6px;
+}
+
+.contactInfo h3 {
+	font-family: "Poppins", sans-serif !important;
+	font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+	.contact {
+		padding: 11px;
+	}
+
+	.contactForm {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.cont5 {
+		flex-direction: column;
+	}
+
+	.cont5 .contactInfo {
+		margin-bottom: 40px;
+	}
+
+	.cont5 .contactInfo {
+		width: 100%;
+	}
+}
