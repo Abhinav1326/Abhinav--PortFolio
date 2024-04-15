@@ -181,6 +181,7 @@ header {
     height: 100vh;
     width: 100vw;
     background-color: #f1f1f1;
+    /* z-index: 100; */
 }
 
 #page2 {
@@ -290,6 +291,7 @@ canvas {
     position: absolute;
     top: 30%;
     left: 10%;
+    z-index: 100;
 }
 
 #welcome .right-text h3 {
@@ -688,7 +690,7 @@ canvas {
     z-index: -1;
     border-radius: 4px;
     transform: translateY(0%);
-    background-color: #fff;
+    /* background-color: #fff; */
     transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
     color: #000;
     text-decoration: none;
@@ -904,4 +906,87 @@ canvas {
     .cards {
         margin: 15px;
     }
+
+    canvas {
+        opacity: .3;
+    }
+
+    #page h3 {
+        width: 60%;
+        font-size: 3.5em;
+        text-align: left;
+    }
+    #page h4 {
+        font-size: 5em;
+        text-align: right;
+    }
+
+    #welcome .right-text h3 {
+        font-weight: 400;
+        font-size: 2em;
+    }
+
+    #welcome .left-text {
+        width: 100%;
+    }
+    #welcome .left-text h1 {
+        position: absolute;
+        top: 70%;
+        right: 5%;
+        text-align: end;
+        font-size: 3em;
+    }
+
+    #page2 #text1 {
+        top: 17%;
+    }
+    #page2 #text1 h1 {
+        font-size: 2.3em;
+    }
+
+    #page2 #text2 h1 {
+        font-size: 2.5em;
+    }
+
+    #page2 #text2 p {
+        line-height: 1.3;
+        font-size: .8em;
+        /* width: 80%; */
+        text-align: right;
+        padding-left: 40px;
+    }
+    #page2 #text2 p br {
+        display: none;
+    }
+
+    #page3 .right-text {
+        top: 15%;
+    }
+    #page3 .react-text {
+        bottom: 50%;
+        top: 80%;
+    }
+    #page3 .left-text {
+        top: 50%;
+        bottom: 50%;
+    }
+    #page3 .right-text h1 {
+        color: #000;
+        font-size: 3em;
+        text-align: left;
+    }
+
+    #page3 .react-text h1 {
+        color: #000;
+        font-size: 3em;
+        text-align: left;
+    }
+
+    #page3 .left-text h1 {
+        color: #000;
+        font-size: 3em;
+        text-align: right;
+    }
 }
+
+
